@@ -1,6 +1,8 @@
 # bomtrim
 
-Utility library that removes byte-order marks so you don't have to!
+A tiny utility that removes byte order marks so you don't have to!  
+
+Byte order marks are special unicode characters prefixed to text files, such as \uFEFF.  
 
 <br>
 
