@@ -6,6 +6,10 @@ import (
 
 // FirstIndex removes UTF8 encoding from the first index of the given slice.
 func FirstIndex(record []string) []string {
+	if len(record) == 0 {
+		return record
+	}
+
 	record[0] = String(record[0])
 
 	return record
