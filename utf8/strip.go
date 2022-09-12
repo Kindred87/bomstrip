@@ -1,16 +1,18 @@
-package utf8
+package striputf8
 
-import "unicode/utf8"
+import (
+	"unicode/utf8"
+)
 
-// StripFirstIndex removes UTF8 encoding from the first index of the given slice.
-func StripFirstIndex(record []string) []string {
-	record[0] = StripLine(record[0])
+// FirstIndex removes UTF8 encoding from the first index of the given slice.
+func FirstIndex(record []string) []string {
+	record[0] = Line(record[0])
 
 	return record
 }
 
-// StripLine removes UTF8 encoding from the given string.
-func StripLine(s string) string {
+// Line removes UTF8 encoding from the given string.
+func Line(s string) string {
 	if len(s) == 0 {
 		return s
 	}
