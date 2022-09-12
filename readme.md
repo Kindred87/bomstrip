@@ -38,10 +38,10 @@ func main() {
 		log.Fatalf("error while reading header row in %s: %s", fi.Name(), err.Error())
 	}
 
-    fmt.Printf("Before stripping: %#v\n", firstRow)
+    fmt.Printf("Before trimming: %#v\n", firstRow)
 
     firstRow = trimutf8.FirstIndex(record []string)
 
-    fmt.Printf("After stripping: %#v\n", firstRow)
+    fmt.Printf("After trimming: %#v\n", firstRow)
 }
 ```
