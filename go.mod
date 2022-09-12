@@ -1,3 +1,3 @@
-module github.com/Kindred87/bomstrip
+module github.com/Kindred87/bomtrim
 
 go 1.19
