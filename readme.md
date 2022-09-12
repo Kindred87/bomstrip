@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-    "github.com/Kindred87/bomtrim/"
+    "github.com/Kindred87/bomtrim"
 )
 
 func main() {
