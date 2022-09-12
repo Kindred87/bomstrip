@@ -4,7 +4,7 @@ import (
 	"unicode/utf8"
 )
 
-// FirstIndex removes UTF8 encoding from the first index of the given slice.
+// FirstIndex removes the BOM from the first index of the given slice.
 func FirstIndex(record []string) []string {
 	if len(record) == 0 {
 		return record
@@ -15,7 +15,7 @@ func FirstIndex(record []string) []string {
 	return record
 }
 
-// String removes UTF8 encoding from the given string.
+// String removes the BOM from the given string.
 func String(s string) string {
 	if len(s) == 0 {
 		return s
