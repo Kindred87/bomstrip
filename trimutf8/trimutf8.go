@@ -6,13 +6,13 @@ import (
 
 // FirstIndex removes UTF8 encoding from the first index of the given slice.
 func FirstIndex(record []string) []string {
-	record[0] = Line(record[0])
+	record[0] = String(record[0])
 
 	return record
 }
 
-// Line removes UTF8 encoding from the given string.
-func Line(s string) string {
+// String removes UTF8 encoding from the given string.
+func String(s string) string {
 	if len(s) == 0 {
 		return s
 	}
