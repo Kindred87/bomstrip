@@ -1,4 +1,4 @@
-package striputf8
+package trimutf8
 
 import (
 	"unicode/utf8"

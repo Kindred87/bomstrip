@@ -1,4 +1,4 @@
-# bomstrip
+# bomtrim
 
 Utility library that removes byte-order marks so you don't have to!
 
@@ -6,7 +6,7 @@ Utility library that removes byte-order marks so you don't have to!
 
 # Install
 ```
-GOPROXY=direct go get -u github.com/Kindred87/bomstrip
+GOPROXY=direct go get -u github.com/Kindred87/bomtrim
 ```
 
 <br>
@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-    "github.com/Kindred87/bomstrip/striputf8"
+    "github.com/Kindred87/bomtrim/trimutf8"
 )
 
 func main() {
@@ -40,7 +40,7 @@ func main() {
 
     fmt.Printf("Before stripping: %#v\n", firstRow)
 
-    firstRow = striputf8.FirstIndex(record []string)
+    firstRow = trimutf8.FirstIndex(record []string)
 
     fmt.Printf("After stripping: %#v\n", firstRow)
 }
