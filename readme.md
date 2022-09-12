@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-    "github.com/Kindred87/bomtrim/trimutf8"
+    "github.com/Kindred87/bomtrim/"
 )
 
 func main() {
@@ -40,7 +40,7 @@ func main() {
 
     fmt.Printf("Before trimming: %#v\n", firstRow)
 
-    firstRow = trimutf8.FirstIndex(record []string)
+    firstRow = bomtrim.FirstIndex(record []string)
 
     fmt.Printf("After trimming: %#v\n", firstRow)
 }

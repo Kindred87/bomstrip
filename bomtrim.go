@@ -1,4 +1,4 @@
-package trimutf8
+package bomtrim
 
 import (
 	"unicode/utf8"

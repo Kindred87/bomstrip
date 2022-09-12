@@ -1,9 +1,11 @@
-package trimutf8
+package bomtrim
 
 import (
 	"strings"
 	"testing"
 )
+
+var ()
 
 func TestFirstIndex(t *testing.T) {
 	var record []string
