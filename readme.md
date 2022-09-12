@@ -19,8 +19,8 @@ package main
 
 import (
     "encoding/csv"
-	"fmt"
-	"os"
+    "fmt"
+    "os"
 
     "github.com/Kindred87/bomtrim"
 )
