@@ -21,14 +21,20 @@ func String(s string) string {
 		return s
 	}
 
-	_, i := utf8.DecodeRuneInString(s)
+	utfRune, _ := utf8.DecodeRuneInString(s)
 
-	t := s[i+1:]
+	var new []rune
+	removedRune := false
 
-	_, i = utf8.DecodeRuneInString(t)
-	t = t[:len(t)-i]
+	for _, r := range s {
+		if r != utfRune || removedRune {
+			new = append(new, r)
+		} else {
+			removedRune = true
+		}
+	}
 
-	s = t
+	s = string(new)
 
 	return s
 }
