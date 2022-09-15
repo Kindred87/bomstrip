@@ -37,12 +37,12 @@ func main() {
 
     firstRow, err := reader.Read()
 	if err != nil {
-		log.Fatalf("error while reading header row in %s: %s", fi.Name(), err.Error())
+		log.Fatalf("error while reading first row in %s: %s", fi.Name(), err.Error())
 	}
 
     fmt.Printf("Before trimming: %#v\n", firstRow)
 
-    firstRow = bomtrim.FirstIndex(record []string)
+    firstRow = bomtrim.FirstIndex(firstRow)
 
     fmt.Printf("After trimming: %#v\n", firstRow)
 }
